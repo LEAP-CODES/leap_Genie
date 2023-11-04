@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="form.css"> -->
+    <title>Leap Ginnie - Forget Password</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .bg-img {
+        padding-inline: 4rem;
+        height: 100vh;
+        background-image: url(../static/assets/forgetPass-bg-img.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* gap: 10rem; */
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .img img{
+        width: 550px;
+    }
+
+    .form-container {
+        height: 600px;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        -webkit-box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+        border-radius: 12.5px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        position: relative;
+    }
+
+    .form-container h2 {
+        color: #fff;
+        font-size: 2.05rem;
+        font-weight: 500;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .items p {
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 5px;
+        padding: 0 2.5px;
+    }
+
+    .items input {
+        font-size: 1.05rem;
+        color: #fff;
+        height: 45px;
+        width: 300px;
+        border-radius: 7.5px;
+        padding: 2.5px 15px;
+        border: 1px solid #fff;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .items input::placeholder {
+        color: #fff;
+    }
+
+    .btn input {
+        font-size: 1.05rem;
+        font-weight: 500;
+        padding: 10px 15px;
+        height: 45px;
+        width: 300px;
+        border-radius: 7.5px;
+        cursor: pointer;
+        color: white;
+        border: none;
+        background: linear-gradient(90.57deg,
+                #628eff 9.91%,
+                #8740cd 53.29%,
+                #580475 91.56%);
+
+        transition: all 0.3s ease 0s;
+    }
+
+    .bottom-links {
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 350px;
+        gap: 1rem;
+        position: absolute;
+        bottom: 5%;
+    }
+
+    .bottom-links a {
+        text-decoration: none;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .bottom-horizontal-links {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* gap: 2rem; */
+        background: linear-gradient(180deg, rgba(98, 98, 98, 0) 0%, rgba(98, 98, 98, 0.25) 100%);
+    }
+</style>
+
+<body>
+    <div class="bg-img">
+        <div class="img">
+            <img src="/static/assets/forgetPass-img.png" alt="">
+        </div>
+        <div class="form-container">
+            <h2>Forget Password ?</h2>
+            <form action="" class="form">
+                <div class="items">
+                    <p>Please enter your Email</p>
+                    <input type="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="btn">
+                    <input type="button" value="Reset Password">
+                </div>
+            </form>
+            <div class="bottom-links">
+                <a href="/template/form.html">Don’t have an account ? Signup</a>
+                <div class="bottom-horizontal-links">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Support</a>
+                    <a href="#">Customer Care</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
