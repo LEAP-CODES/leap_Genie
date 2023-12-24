@@ -10,11 +10,11 @@
 
 .bg-img {
   height: 100vh;
-  background-image: url(../assets/ginnie-bg.jpg);
+  background-image: url(/static/assets/ginnie-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 110%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
@@ -34,7 +34,7 @@
   border-radius: 12.5px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
-  /* left: 60%; */
+  left: 10%;
 }
 
 .tabs {
@@ -112,7 +112,7 @@
   width: 15px;
 }
 
-.btn input {
+.btn button {
   font-size: 1.05rem;
   font-weight: 500;
   padding: 10px 15px;
